@@ -1,13 +1,15 @@
 {
   "name": "vuy",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "description": "基于 vue-cli3 的 UI 组件库",
-  "main": "packages/index.js",
+  "main": "lib/vuy.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name vuy --dest lib packages/index.js",
+    "pub": "npm publish -registry=https://registry.npmjs.org/"
   },
   "dependencies": {
     "core-js": "^2.6.5",
